@@ -3,6 +3,7 @@ import styles from './Header.module.scss'
 import images from "~/assets/images";
 import Search from "./Search";
 import Menu from "./Menu";
+import MenuItem from "./MenuItem";
 
 
 const cx = classNames.bind(styles)
@@ -17,7 +18,15 @@ function Header() {
                     <img className={cx('flag')} src={images.flagEn} alt="flag-en" />
                 </div>
                 <div className={cx('menu-bottom')}>
-                    <Menu />
+                    <Menu>
+                        <MenuItem title="Quán cà phê" />
+                        <MenuItem title="Thực đơn" />
+                        <MenuItem title="Tin tức" />
+                        <MenuItem title="Cộng đồng" />
+                        <MenuItem title="Về chúng tôi" />
+                        <MenuItem title="Nghề nghiệp" />
+                        <MenuItem title="Mua ngay" />
+                    </Menu>
                 </div>
             </div>
         </div>
