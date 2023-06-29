@@ -1,13 +1,13 @@
-export const SearchIcon = ({ width = '1em', height = '1em', className }) => (
+export const SearchIcon = ({ width = '15px', height = '15px', className }) => (
     <svg version="1.1"
-        x="0px" y="0px" width="15px" height="15px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" >
+        x="0px" y="0px" width={width} height={height} viewBox="0 0 10 10">
         <defs>
         </defs>
         <g>
             <defs>
-                <rect id="SVGID_1_" x="0" width="9.987" height="10" />
+                <rect id="" x="0" width="9.987" height="10" />
             </defs>
-            <path clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#808080" d="M7.735,6.574
+            <path clipPath="url(#)" fillRule="evenodd" clipRule="evenodd" fill="#808080" d="M7.735,6.574
 		c0.64,0.64,1.278,1.27,1.905,1.91c0.127,0.129,0.246,0.289,0.306,0.458c0.121,0.341-0.029,0.706-0.327,0.909
 		c-0.295,0.202-0.65,0.199-0.945-0.015C8.586,9.776,8.51,9.699,8.435,9.624c-0.58-0.577-1.16-1.152-1.733-1.737
 		C6.588,7.772,6.51,7.757,6.364,7.841c-2.61,1.506-5.833-0.035-6.313-3.01c-0.374-2.31,1.364-4.533,3.701-4.803

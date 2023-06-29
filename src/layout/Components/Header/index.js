@@ -1,9 +1,10 @@
 import classNames from "classnames/bind";
 import styles from './Header.module.scss'
-import images from "~/assets/Images";
-import { SearchIcon } from "~/components/Icon";
+import images from "~/assets/images";
 import Search from "./Search";
 import Menu from "./Menu";
+
+
 const cx = classNames.bind(styles)
 function Header() {
     return (<div className={cx('wrapper-header')}>
@@ -15,12 +16,12 @@ function Header() {
                     <img className={cx('flag')} src={images.flagVn} alt="flag-vn" />
                     <img className={cx('flag')} src={images.flagEn} alt="flag-en" />
                 </div>
-                <div className={cx('menu-item')}>
+                <div className={cx('menu-bottom')}>
                     <Menu />
                 </div>
             </div>
         </div>
-    </div>);
+    </div >);
 }
 
 export default Header;

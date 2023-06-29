@@ -1,0 +1,13 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.list-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "UTMA";
+}
