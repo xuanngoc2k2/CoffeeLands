@@ -1,21 +1,43 @@
 import MenuItem from '../MenuItem';
+import Poper from '../MenuItem/Poper';
 import styles from './Menu.module.scss'
 import classNames from "classnames/bind";
 
+const dataTd = [{
+    title: "CA PHE",
+    items: [
+        "Ca Phe Phin",
+        "PhinDi",
+        "Ca Phe Espressp"
+    ]
+},
+{
+    title: "FREEZE",
+    items: [
+        "Freeze Ca Phe Phin",
+        "Freeze Khong Ca Phe"
+    ]
+},
+{
+    title: "FREEZE",
+    items: [
+        "Freeze Ca Phe Phin",
+        "Freeze Khong Ca Phe"
+    ]
+},
+{
+    title: "FREEZE",
+    items: [
+        "Freeze Ca Phe Phin",
+        "Freeze Khong Ca Phe"
+    ]
+}];
 const cx = classNames.bind(styles);
 function Menu() {
     return (<nav className={cx('wrapper')}>
         <MenuItem title="Quán cà phê" />
         <MenuItem title="Thực đơn">
-            <div>
-                <p>CÀ PHÊ</p>
-                <p>Cà Phê Phin</p>
-                <p>PhinDi</p>
-                <p>Cà Phê Espresso</p>
-            </div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <Poper datas={dataTd} desc={{ title: "Phin Sua Da Dam Da Chat Phin", img: "PHIN_SUA_DA_5.1.png" }} />
         </MenuItem>
         <MenuItem title="Tin tức" />
         <MenuItem title="Cộng đồng" />
