@@ -3,9 +3,12 @@ import classNames from "classnames/bind";
 
 const cx = classNames.bind(styles)
 
-function MenuItem({ title, to }) {
+function MenuItem({ title, to, children }) {
     return (
-        <a className={cx('menu-item')}>{title}</a>
+        <div className={cx('menu-item')}>
+            <a href='#'>{title}</a>
+            {children && <div className={cx('menu-list')}>{children}</div>}
+        </div>
         // <NavLink className={(nav) => cx('menu-item', { active: nav.isActive })} to={to}>
         //     <span className={cx('title')}>{title}</span>
         // </NavLink>

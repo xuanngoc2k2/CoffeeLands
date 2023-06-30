@@ -1,14 +1,31 @@
 .menu-item{
-    color: #fff;
-    font-size: 14px;
+    a{
+
+        color: #fff;
+        font-size: 14px;
+    }
     font-family: var(--font-family);
     padding: 10px 17px;
     line-height: 25px;
     margin-right: 10px;
-    
+    // position: relative;
     &:hover{
         cursor: pointer;
         transition: all 0.3s linear;;
         background-color: #53382c;
+        
+        .menu-list{
+            // visibility: visible;
+        }
     }
+}
+
+.menu-list{
+    // visibility: hidden;
+    position: absolute;
+    background-color: #53382c;
+    top: 99.5%;
+    left: 0;
+    width: 1000px;
+    min-width: 100%;
 }
