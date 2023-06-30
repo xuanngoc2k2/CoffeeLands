@@ -18,15 +18,7 @@ function Header() {
                     <img className={cx('flag')} src={images.flagEn} alt="flag-en" />
                 </div>
                 <div className={cx('menu-bottom')}>
-                    <Menu>
-                        <MenuItem title="Quán cà phê" />
-                        <MenuItem title="Thực đơn" />
-                        <MenuItem title="Tin tức" />
-                        <MenuItem title="Cộng đồng" />
-                        <MenuItem title="Về chúng tôi" />
-                        <MenuItem title="Nghề nghiệp" />
-                        <MenuItem title="Mua ngay" />
-                    </Menu>
+                    <Menu />
                 </div>
             </div>
         </div>
