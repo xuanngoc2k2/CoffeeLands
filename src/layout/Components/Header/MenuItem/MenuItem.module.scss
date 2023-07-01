@@ -2,12 +2,13 @@
     color: #fff;
     font-size: 14px;
     text-transform: uppercase;
+    // padding: 10px 17px;
     line-height: 25px;
 }
 .menu-item{
     font-family: var(--font-family);
-    padding: 10px 17px;
     margin-right: 10px;
+    padding: 10px 17px;
     // position: relative;
     &:hover{
         cursor: pointer;
@@ -21,7 +22,9 @@
 }
 
 .menu-list{
-    visibility: hidden;
+    cursor: default;
+    z-index: 100;
+    // visibility: hidden;
     position: absolute;
     background-color: #53382c;
     top: 99.5%;

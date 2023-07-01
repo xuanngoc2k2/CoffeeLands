@@ -16,7 +16,11 @@
     src: url('../../assets/fonts/UTMA.woff2');
     font-weight: 400;
 }
-
+@font-face {
+    font-family: "fontawesome";
+    src: url('../../assets/fonts/fontawesome-webfont.woff2');
+    font-weight: 400;
+}
 body{
     font-size: 14px;
     line-height: 22px;

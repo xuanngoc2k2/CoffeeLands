@@ -58,7 +58,7 @@ function Menu() {
         <MenuItem title="Tin tức" />
         <MenuItem title="Cộng đồng" />
         <MenuItem title="Về chúng tôi">
-            <Poper datas={dataAboutMe} desc={{ title: "Phin Sữa Đá Đậm Đà Chất Phin", img: images.PHIN_SUA_DA }} />
+            {/* <Poper datas={dataAboutMe} desc={{ title: "Phin Sữa Đá Đậm Đà Chất Phin", img: images.PHIN_SUA_DA }} /> */}
         </MenuItem>
         <MenuItem title="Nghề nghiệp" />
         <MenuItem title="Mua ngay" />

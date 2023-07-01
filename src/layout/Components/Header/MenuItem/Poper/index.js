@@ -5,7 +5,7 @@ import classNames from 'classnames/bind';
 const cx = classNames.bind(styles);
 
 function Poper({ datas, desc }) {
-
+    console.log(desc);
     return (
         <div className={cx('menu-wrapper')}>
             <div className={cx('col-1')}>
@@ -27,9 +27,13 @@ function Poper({ datas, desc }) {
             </div>
 
             {desc && <div className={cx('col-2')}>
-                <p>{desc.title}</p>
+                <div className={cx('txt')}>
+                    <p>{desc.title}</p>
 
-                {/* <img src={images.n} /> */}
+                </div>
+                <div className={cx('img')}>
+                    <img src={desc.img} width={"155px"} />
+                </div>
             </div>}
         </div>
     );

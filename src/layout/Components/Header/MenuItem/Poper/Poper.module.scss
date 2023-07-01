@@ -22,16 +22,41 @@
         text-transform: uppercase;
         color: #f1bc7a;
         font-size: 16px;
+        cursor: pointer;
         margin-bottom: 5px;
     }
 
     .col{
         width: 25%;
         padding: 0px 12px;
+        
+        ul:nth-child(2)>li>a::before{
+            content: "\f0da";
+            visibility: hidden;
+            font-family: "fontawesome";
+            transform: translateY(-50%);
+            transition: all 0.3s linear;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            opacity: 0;
+        }
 
-        ul>li>a{      
+        ul:nth-child(2)>li>a{      
             display: block;
+            position: relative;
+            cursor: pointer;
             margin-bottom: 5px !important;
+            transition: all 0.3s linear;
+
+            &:hover{
+                padding-left: 15px;
+
+                &::before{
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
         }
     }
 }
