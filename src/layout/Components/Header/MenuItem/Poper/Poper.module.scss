@@ -1,4 +1,4 @@
-.menu-wrapper{
+.menu-wrapper {
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
@@ -7,12 +7,33 @@
     ul{
         list-style: none;
     }
+    color: #fff;
+    font-family: 'Open Sans', sans-serif
 }
-
 .col-1{
     flex: 1;
     display: flex;
-    justify-content: center;
+    text-align: center;
+    margin: 0 -15px;
+    
+    .title{
+        font-family: var(--font-family);
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #f1bc7a;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .col{
+        width: 25%;
+        padding: 0px 12px;
+
+        ul>li>a{      
+            display: block;
+            margin-bottom: 5px !important;
+        }
+    }
 }
 .col-2{
     width: 215px;

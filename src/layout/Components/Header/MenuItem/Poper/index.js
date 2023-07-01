@@ -5,22 +5,22 @@ import classNames from 'classnames/bind';
 const cx = classNames.bind(styles);
 
 function Poper({ datas, desc }) {
-    const img = desc.img;
+
     return (
         <div className={cx('menu-wrapper')}>
             <div className={cx('col-1')}>
 
                 {datas.map((data, index) => (
-                    <div key={index}>
+                    <div className={cx('col')} key={index}>
                         <ul>
-                            <li>
+                            <li className={cx('title')}>
                                 <a><span>{data.title}</span></a>
                             </li>
-                            <ul>
+                            {data.items && <ul>
                                 {data.items.map((item, itemIndex) => (
                                     <li key={itemIndex}><a><span>{item}</span></a></li>
                                 ))}
-                            </ul>
+                            </ul>}
                         </ul>
                     </div>
                 ))}
