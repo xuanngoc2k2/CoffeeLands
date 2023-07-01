@@ -1,13 +1,12 @@
 .menu-item{
-    a{
-
+    .item-link{
         color: #fff;
         font-size: 14px;
         text-transform: uppercase;
+        line-height: 25px;
     }
     font-family: var(--font-family);
     padding: 10px 17px;
-    line-height: 25px;
     margin-right: 10px;
     // position: relative;
     &:hover{

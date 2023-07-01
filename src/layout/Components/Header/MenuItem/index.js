@@ -6,7 +6,7 @@ const cx = classNames.bind(styles)
 function MenuItem({ title, to, children }) {
     return (
         <div className={cx('menu-item')}>
-            <a href='#'>{title}</a>
+            <a className={cx('item-link')} href='#'>{title}</a>
             {children && <div className={cx('menu-list')}>{children}</div>}
         </div>
         // <NavLink className={(nav) => cx('menu-item', { active: nav.isActive })} to={to}>
