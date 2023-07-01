@@ -1,3 +1,4 @@
+
 .menu-wrapper {
     max-width: 1200px;
     padding: 0 15px;
@@ -47,9 +48,9 @@
             position: relative;
             cursor: pointer;
             margin-bottom: 5px !important;
-            transition: all 0.3s linear;
-
+            
             &:hover{
+                transition: all 0.3s linear;
                 padding-left: 15px;
 
                 &::before{
@@ -61,6 +62,33 @@
     }
 }
 .col-2{
-    width: 215px;
-    padding: 0 15px
+    width: 185px;
+    padding: 0 15px;
+    float: left;
+    background-size: cover;
+    background-position: center;
+}
+
+.txt{
+    padding-top: 10px;
+    width: 83%;
+    margin-bottom: 25px;
+    a{
+        color: #f1bc7a !important;
+        font-size: 20px;
+        line-height: 26px;
+        font-family: var(--font-family);
+        font-weight: normal;
+        padding-right: 20%;
+
+        &:hover{
+            color: #fff !important;
+            transition: color linear 500ms;
+        }
+    }
+}
+
+.img{
+    text-align: center;
+    padding-bottom: 5px;
 }

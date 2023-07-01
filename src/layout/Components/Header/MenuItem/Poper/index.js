@@ -5,7 +5,6 @@ import classNames from 'classnames/bind';
 const cx = classNames.bind(styles);
 
 function Poper({ datas, desc }) {
-    console.log(desc);
     return (
         <div className={cx('menu-wrapper')}>
             <div className={cx('col-1')}>
@@ -26,16 +25,16 @@ function Poper({ datas, desc }) {
                 ))}
             </div>
 
-            {desc && <div className={cx('col-2')}>
+            {desc && <div className={cx('col-2')} style={{ backgroundImage: `url(${images.backGroundMenu})` }}>
                 <div className={cx('txt')}>
-                    <p>{desc.title}</p>
+                    <a href='#'>{desc.title}</a>
 
                 </div>
                 <div className={cx('img')}>
-                    <img src={desc.img} width={"155px"} />
+                    <img src={desc.img} width={"155px"} alt={desc.title} />
                 </div>
             </div>}
-        </div>
+        </div >
     );
 }
 
