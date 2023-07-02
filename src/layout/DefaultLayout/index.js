@@ -29,8 +29,7 @@ const dataBanner = [{
 {
   img: images.imgBanner6,
   to: "#",
-}
-]
+}]
 function DefaultLayout({ children }) {
   return (
     <div className={cx("wrapper")}>
