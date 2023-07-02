@@ -3,7 +3,7 @@ import styles from './Banner.module.scss'
 import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const cx = classNames.bind(styles);
 
@@ -17,6 +17,17 @@ function Banner({ datas }) {
     const handClickPrev = () => {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + datas.length) % datas.length);
     }
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % datas.length);
+        }, 5000);
+
+        return () => {
+            clearTimeout(timer);
+        };
+    }, [currentIndex, datas.length]);
+
     return (<div className={cx('wrapper')}>
         <div className={cx('pre-btn')} onClick={handClickPrev}>
             <FontAwesomeIcon icon={faChevronLeft} />
@@ -31,14 +42,12 @@ function Banner({ datas }) {
         <div className={cx('next-btn')} onClick={handClickNext}>
             <FontAwesomeIcon icon={faChevronRight} />
         </div>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <ul className={cx('list-btn')}>
+            {datas.map((data, index) => (
+                <li key={index} className={cx({ active: index === currentIndex })} ><button>.</button></li>
+            ))}
         </ul>
-    </div>);
+    </div >);
 }
 
 export default Banner;
