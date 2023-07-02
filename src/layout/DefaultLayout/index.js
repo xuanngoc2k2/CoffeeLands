@@ -33,7 +33,9 @@ const dataBanner = [{
 function DefaultLayout({ children }) {
   return (
     <div className={cx("wrapper")}>
-      <Header />
+      <div className={cx('header')}>
+        <Header />
+      </div>
       <div className={cx("container")}>
         <div className={cx("banner")}>
           <Banner datas={dataBanner} />
@@ -45,7 +47,9 @@ function DefaultLayout({ children }) {
         </div>
         <div className={cx("content")}>{children}</div>
       </div>
-      <Footer />
+      <div className={cx('footer')}>
+        <Footer />
+      </div>
     </div>
   );
 }
