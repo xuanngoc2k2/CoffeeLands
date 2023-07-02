@@ -38,6 +38,11 @@ function DefaultLayout({ children }) {
         <div className={cx("banner")}>
           <Banner datas={dataBanner} />
         </div>
+        <div className={cx('img')}>
+          <a href='#'>
+            <img src={images.imgBannerSale} />
+          </a>
+        </div>
         <div className={cx("content")}>{children}</div>
       </div>
       <Footer />
