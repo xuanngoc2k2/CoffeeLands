@@ -12,6 +12,7 @@
 
 .content1{
   display: flex;
+  overflow: hidden;
   flex-direction: row-reverse;
   color: #fff;
   text-transform: uppercase;
@@ -60,20 +61,45 @@
   width: 45%;
   right: 0;
   opacity: 0;
-  transform: translateX(100%);
-  // transition: all linear 0.3s;
+  transition: transform 0.5s ease;
+
   .addr-t{
     font-size: 22px;
     margin-bottom: 10px;
     line-height: 30px;
   }
 
-  &.active{
+  &.active {
     opacity: 1;
-    transform: translateX(0);
-    transition: all linear 0.3s;
+    transform: translateX(0); // Chuyển động từ phải qua khi active
   }
+
+  &:not(.active) {
+    transform: translateX(100%); // Chuyển động sang phải khi không active
+  }
+  
 }
 .content2{
+  .content{
+    padding-left: 100px;
+  }
+
+  .list-news{
+    display: flex;
+    flex-direction: column;
+  }
   
+  .news{
+    display: flex;
+    flex-direction: row;
+
+    .img{
+      width: 120px;
+      margin-right: 15px;
+      overflow: hidden;
+      img{
+        width: 100%;
+      }
+    }
+  }
 }

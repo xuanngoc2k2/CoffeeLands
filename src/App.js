@@ -1,5 +1,6 @@
 import DefaultLayout from './layout/DefaultLayout';
 import Address from './components/Address';
+import images from './assets/images';
 
 
 const listAddress = [
@@ -16,10 +17,29 @@ const listAddress = [
     detail: "Tầng 3, 1-3-5 Đinh Tiên Hoàng, Phường Hàng Trống, Quận Hoàn Kiếm, Hà Nội"
   },
 ]
+
+const listNews = [
+  {
+    img: images.imgNews1,
+    caption: "Mới! Trà tuyết highlands coffee",
+    date: '17/05/2023'
+  },
+  {
+    img: images.imgNews2,
+    caption: "Tri ân khách hàng - highlands coffee",
+    date: '04/05/2023'
+  },
+  {
+    img: images.imgNews3,
+    caption: "Mạnh mẽ làm điều mình yêu",
+    date: '06/03/2023'
+  },
+
+]
 function App() {
   return (
     <DefaultLayout>
-      <Address listAddress={listAddress} />
+      <Address listAddress={listAddress} listNews={listNews} />
     </DefaultLayout>
   );
 }

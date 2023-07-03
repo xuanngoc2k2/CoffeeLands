@@ -12,7 +12,11 @@ const images = {
     imgBanner5: require('~/assets/images/banner5.png'),
     imgBanner6: require('~/assets/images/banner6.png'),
     imgBannerSale: require('~/assets/images/bannersale.jpg'),
-    imgMainBg: require('~/assets/images/mainbg.jpg')
+    imgMainBg: require('~/assets/images/mainbg.jpg'),
+    imgMainBg2: require('~/assets/images/mainbg2.jpg'),
+    imgNews1: require('~/assets/images/new1.jpg'),
+    imgNews2: require('~/assets/images/new2.jpg'),
+    imgNews3: require('~/assets/images/new3.png'),
 };
 
 export default images;

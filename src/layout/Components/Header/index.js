@@ -3,7 +3,6 @@ import styles from './Header.module.scss'
 import images from "~/assets/images";
 import Search from "./Search";
 import Menu from "./Menu";
-import MenuItem from "./MenuItem";
 
 
 const cx = classNames.bind(styles)

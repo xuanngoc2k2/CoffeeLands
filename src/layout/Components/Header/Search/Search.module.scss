@@ -16,6 +16,9 @@
     &:focus-within{
         border: none !important;
     }
+    &::placeholder{
+        font-style: italic;
+    }
 }
 .btn-search{
     background-color: transparent;
