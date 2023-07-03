@@ -7,8 +7,13 @@
     min-height: 1px;
 }
 
-.img>a>img{
-    width: 100%;
+.img>a{
+    line-height: 0;
+    display: block;
+    
+        img{
+            width: 100%;
+        }
 }
 
 .footer{
