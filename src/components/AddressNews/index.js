@@ -1,4 +1,4 @@
-import styles from './Address.module.scss';
+import styles from './AddressNews.module.scss';
 import images from '~/assets/images';
 import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,7 +9,6 @@ const cx = classNames.bind(styles);
 
 function Address({ listAddress, listNews }) {
     const [curAddr, setCurAddr] = useState(0);
-    const [prevAddr, setPrevAddr] = useState(listAddress.length - 1);
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -31,7 +30,7 @@ function Address({ listAddress, listNews }) {
                     <div className={cx('list-addr')}>
                         {listAddress.map((addr, index) => (
                             <div
-                                className={cx('address', { active: index === curAddr, 'prev-address': index === prevAddr })}
+                                className={cx('address', { active: index === curAddr })}
                                 key={index}
                             >
                                 <div className={cx('addr-t')}>{addr.title}</div>
@@ -48,7 +47,7 @@ function Address({ listAddress, listNews }) {
                 <div className={cx('box')}>
                     <div className={cx('title')}>
                         <h2>Tin mới nhất</h2>
-                        <a href='#'>Xem toàn bộ <FontAwesomeIcon icon={faChevronRight} /></a>
+                        <a href='#'><span>Xem toàn bộ</span></a>
                     </div>
                     <div className={cx('content')}>
                         <div className={cx('list-news')}>
@@ -59,7 +58,7 @@ function Address({ listAddress, listNews }) {
                                     </div>
                                     <div className={cx('caption')}>
                                         <div className={cx('tend')}>
-                                            {news.caption}
+                                            <a>{news.caption}</a>
                                         </div>
                                         <div className={cx('date')}>
                                             <span>{news.date}</span>
@@ -69,7 +68,7 @@ function Address({ listAddress, listNews }) {
                             ))}
                         </div>
                         <div className={cx('form-recive')}>
-                            <input />
+                            <input placeholder='Nhập email của bạn để nhận thông tin...' />
                             <button type='submit'><span>Gửi</span></button>
                         </div>
                     </div>

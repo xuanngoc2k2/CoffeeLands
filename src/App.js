@@ -1,5 +1,5 @@
 import DefaultLayout from './layout/DefaultLayout';
-import Address from './components/Address';
+import AddressNews from './components/AddressNews';
 import images from './assets/images';
 
 
@@ -31,7 +31,7 @@ const listNews = [
   },
   {
     img: images.imgNews3,
-    caption: "Mạnh mẽ làm điều mình yêu",
+    caption: "Mạnh mẽ làm điều mình yêu!",
     date: '06/03/2023'
   },
 
@@ -39,7 +39,7 @@ const listNews = [
 function App() {
   return (
     <DefaultLayout>
-      <Address listAddress={listAddress} listNews={listNews} />
+      <AddressNews listAddress={listAddress} listNews={listNews} />
     </DefaultLayout>
   );
 }
