@@ -25,7 +25,7 @@ export const ChatIcon = ({ width = '15px', height = '15px', className }) => (
         role="img"
         fill="#fff"
         alt="Biểu tượng trò chuyện"
-        class="tawk-min-chat-icon">
+        className="tawk-min-chat-icon">
         <path
             fillRule="evenodd"
             clipRule="evenodd"
