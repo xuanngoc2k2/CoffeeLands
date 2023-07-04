@@ -52,7 +52,7 @@ const cx = classNames.bind(styles);
 function Menu() {
     return (<nav className={cx('wrapper')}>
         <MenuItem title="Quán cà phê" />
-        <MenuItem title="Thực đơn">
+        <MenuItem to={'/menu'} title="Thực đơn">
             <Poper datas={dataTd} desc={{ title: "Phin Sữa Đá Đậm Đà Chất Phin! 29.000đ", img: images.PHIN_SUA_DA }} />
         </MenuItem>
         <MenuItem title="Tin tức" />
@@ -61,7 +61,7 @@ function Menu() {
             <Poper datas={dataAboutMe} desc={{ title: "Thương hiệu bắt nguồn từ cà phê Việt!", img: images.backGroundMenu_About }} />
         </MenuItem>
         <MenuItem title="Nghề nghiệp" />
-        <MenuItem title="Mua ngay" />
+        <MenuItem to={'/buynow'} title="Mua ngay" />
     </nav>);
 }
 

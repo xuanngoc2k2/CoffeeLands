@@ -3,13 +3,16 @@ import styles from './Header.module.scss'
 import images from "~/assets/images";
 import Search from "./Search";
 import Menu from "./Menu";
+import { Link } from "react-router-dom";
 
 
 const cx = classNames.bind(styles)
 function Header() {
     return (<div className={cx('wrapper-header')}>
         <div className={cx('inner')}>
-            <img className={cx('logo')} src={images.logo} alt="logo" />
+            <Link to={'/'} style={{ lineHeight: '10px' }}>
+                <img className={cx('logo')} src={images.logo} alt="logo" />
+            </Link>
             <div className={cx('menu')}>
                 <div className={cx('menu-top')}>
                     <Search />
