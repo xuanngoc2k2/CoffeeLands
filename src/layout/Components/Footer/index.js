@@ -9,19 +9,19 @@ function Footer() {
         <div className={cx('wrapper-footer')}>
             <div className={cx('socialFoot')}>
                 <ul>
-                    <li><a><FontAwesomeIcon icon={faFacebookF} /></a></li>
-                    <li><a></a></li>
-                    <li><a></a></li>
+                    <li><a href="#"><span></span></a></li>
+                    <li><a href="#"><span></span></a></li>
+                    <li><a href=""><span></span></a></li>
                 </ul>
             </div>
             <div className={cx('copyRight')}>
-
+                © 2018 Highlands Coffee. All rights reserved
             </div>
             <div className={cx('linkFooter')}>
-
+                <a href="#"><span className={cx('fa-paper-plane-o')}>Đăng ký để nhận bản tin</span></a>
             </div>
-            <div className={cx('linkMb')}>
-
+            <div className={cx('linkFooter')}>
+                <a href="#"><span className={cx('fa-envelope-o', 'linkMb')}>customerservice@highlandscoffee.com.vn</span></a>
             </div>
         </div>);
 }

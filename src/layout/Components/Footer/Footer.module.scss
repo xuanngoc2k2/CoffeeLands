@@ -1,7 +1,13 @@
 .wrapper-footer{
     max-width: 1200px;
-    padding: 15px 0;
+    padding: 0 15px;
     margin: 0 auto;
+    display: flex;
+    color: #fff;
+    font-size: 13px;
+    line-height: 24px;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif
 }
 
 .socialFoot{
@@ -10,18 +16,99 @@
         display: flex;
         list-style: none;
         align-items: center;
+
+        li{
+            margin-right: 5px;
+            a{
+                display: block;
+                width: 25px;
+                height: 25px;
+                background: #ffffff;
+                color: #53382c;
+                font-size: 16px;
+                line-height: 24px;
+                position: relative;
+                backface-visibility: hidden;
+                transition: all 0.3s linear;
+
+                &:hover{
+                    transform: translateY(-3px);
+                }
+                span{
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    font-family: "fontawesome";
+                    transform: translate(-50%,-50%);
+                }
+            }
+            &:nth-child(1){
+                span::before{
+                    content: "\f09a";
+                }
+            }
+
+            &:nth-child(2){
+                span::before{
+                    content: "\f167";
+                }
+            }
+            &:nth-child(3){
+                margin-right: 0px;
+                span::before{
+                    content: "\f16d";
+                }
+            }
+        }
     }
 
 }
 
 .copyRight{
-
+    margin-right: 25px;
 }
 
 .linkFooter{
+    margin-right: 25px;
+    height: 24px;
+    line-height: 24px;
+    a{
+        height: 100%;
+        display: block;
+        font-size: 13px;
+        color: #ffffff;
+        transition: all 0.3s linear;
+
+        &:hover{
+            color: var(--yellow);
+        }
+
+        span{     
+            padding-left: 25px;
+            position: relative;
+
+            &::before{
+                font-family: "fontawesome";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &.fa-paper-plane-o{
+                &::before{
+                    content: "\f1d9";
+                }
+            }
+            &.fa-envelope-o{
+                &::before{
+                    content: "\f003";
+                }
+            }
+        }
+    }
 
 }
 
 .linkMb{
-
+    margin-right: 0px;
 }
