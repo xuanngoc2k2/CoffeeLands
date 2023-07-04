@@ -3,7 +3,11 @@ import ToTop from "~/components/ToTop";
 import DefaultLayout from "~/layout/DefaultLayout";
 import AddressNews from "~/components/AddressNews";
 import images from "~/assets/images";
+import Banner from "~/components/Banner";
+import classNames from "classnames/bind";
+import styles from './Home.module.scss'
 
+const cx = classNames.bind(styles);
 const listAddress = [
     {
         title: "Hàm Cá Mập",
@@ -38,13 +42,49 @@ const listNews = [
 
 ]
 
+const dataBanner = [{
+    img: images.imgBanner1,
+    to: "#",
+},
+{
+    img: images.imgBanner2,
+    to: "#",
+},
+{
+    img: images.imgBanner3,
+    to: "#",
+},
+{
+    img: images.imgBanner4,
+    to: "#",
+},
+{
+    img: images.imgBanner5,
+    to: "#",
+},
+{
+    img: images.imgBanner6,
+    to: "#",
+}]
+
 
 function Home() {
-    return (<DefaultLayout>
-        <AddressNews listAddress={listAddress} listNews={listNews} />
-        <Chat />
-        <ToTop />
-    </DefaultLayout>);
+    return (
+        <>
+            <div className={cx("banner")}>
+                <Banner datas={dataBanner} />
+            </div>
+            <div className={cx('img')}>
+                <a href='#'>
+                    <img src={images.imgBannerSale} />
+                </a>
+            </div>
+            <div className={cx("content")}>
+                <AddressNews listAddress={listAddress} listNews={listNews} />
+            </div>
+            <Chat />
+            <ToTop />
+        </>);
 }
 
 export default Home;

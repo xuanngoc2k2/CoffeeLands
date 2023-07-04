@@ -12,6 +12,9 @@ const publicRoutes = [
         path: '/buynow', component: BuyNow
     }
     ,
+    {
+        path: '/career', component: BuyNow, layout: null
+    }
 ]
 
 const privateRoutes = [
