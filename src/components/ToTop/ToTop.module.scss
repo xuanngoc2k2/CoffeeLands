@@ -1,0 +1,31 @@
+.go-to-top{
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    background: #FFFFFF;
+    bottom: 80px;
+    right: 15px;
+    border-radius: 100%;
+    z-index: 11;
+    border: solid 1px #878787;
+    color: #333;
+    cursor: pointer;
+
+    &::before{
+        content: "\f077";
+        font-family: "fontawesome";
+        font-size: 26px;
+        position: absolute;
+        color: #878787;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transition: all 0.8s ease;
+        animation: bouncez 1.2s 500ms infinite;
+    }
+}
+@keyframes bouncez {
+    0%, 20%, 50%, 80%, 100% {transform: translate(-50%,-50%);}
+    40% {transform: translate(-50%,-80%);}
+    60% {transform: translate(-50%,-60%);}
+}

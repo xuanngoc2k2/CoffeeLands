@@ -1,6 +1,8 @@
 import DefaultLayout from './layout/DefaultLayout';
 import AddressNews from './components/AddressNews';
 import images from './assets/images';
+import Chat from './components/Chat';
+import ToTop from './components/ToTop';
 
 
 const listAddress = [
@@ -40,6 +42,8 @@ function App() {
   return (
     <DefaultLayout>
       <AddressNews listAddress={listAddress} listNews={listNews} />
+      <Chat />
+      <ToTop />
     </DefaultLayout>
   );
 }
