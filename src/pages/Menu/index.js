@@ -38,7 +38,7 @@ function Menu() {
                         <div className={cx('img-wrap')}>
                             <div className={cx('wrapper')} >
                                 <div className={cx('img')}>
-                                    <a>
+                                    <a href='#'>
                                         <img src={menu.img} />
                                     </a>
                                 </div>
