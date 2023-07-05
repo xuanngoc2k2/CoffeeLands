@@ -22,6 +22,11 @@ const images = {
     imgNews1: require('~/assets/images/new1.jpg'),
     imgNews2: require('~/assets/images/new2.jpg'),
     imgNews3: require('~/assets/images/new3.png'),
+    imgProduct1: require('~/assets/images/product1.jpg'),
+    imgProduct2: require('~/assets/images/product2.jpg'),
+    imgProduct3: require('~/assets/images/product3.jpg'),
+    imgProduct4: require('~/assets/images/product4.jpg'),
+    imgProduct5: require('~/assets/images/product5.jpg'),
 };
 
 export default images;

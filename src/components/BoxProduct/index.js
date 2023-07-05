@@ -29,7 +29,7 @@ function BoxProduct({ title, productDes, dataProduct, children }) {
                                         </h3>
                                     </div>
                                     <div className={cx('price')}>
-                                        "Giá: "<strong>{product.Price}</strong>
+                                        Giá: <strong>{product.Price}</strong>
                                     </div>
                                 </div>
                             )
