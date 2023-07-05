@@ -1,5 +1,5 @@
 .menu-wrapper{
-
+    min-height: calc(100vh - (120px + 60px));
 }
 
 .menu{
@@ -8,19 +8,58 @@
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
+
+
     min-height: 340px;
     display: flex;
     justify-content: center;
-
+    
+    a{
+        cursor: pointer;
+    }
     &:nth-child(1){
         color: #faebd7;
         border-color: #faebd7;
         background-color: #fbedd7;
     }
 
+    &:nth-child(2){
+        color: #006400;
+    }
+
+    &:nth-child(3){
+        color: #ffffff;
+    }
+
+    &:nth-child(odd){
+        .wrapper{
+            text-align: left;
+        }
+
+        img{
+            float: right;
+        }
+        .caption{
+            float: left;
+        }
+    }
+
+    &:nth-child(even){
+        .wrapper{
+            text-align: right;
+        }
+        .caption{
+            float: right;
+        }
+        img{
+            float: left;
+        }
+    }
+
     .wrapper{
+        max-width: 100%;
         padding: 0 15px;
-        max-width: 1200px;
+        width: 1200px;
         position: relative;
        
         .caption{
@@ -33,31 +72,51 @@
 .img-wrap{
     position: absolute;
     top: 50%;
-    margin-top: 12px;
     transform: translateY(-50%);
-
+    pointer-events: none;
+    .img{
+        pointer-events: auto;
+    }
     img{
+        margin-top: 12px;
         width: 50%;
-        float: right;
     }
 }
-
 .tend{
-    font-size: 45px;
+    font-size: 40px;
     line-height: 55px;
     text-transform: uppercase;
     color: inherit;
+    border-color: inherit;
     display: block;
     font-family: var(--font-family);
     font-weight: normal !important;
+    margin-bottom: 20px;
 }
 
 .desc{
-    
-
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-family: Roboto,sans-serif;
+    color: inherit;
+    border-color: inherit;
 }
 
 .link{
-    
-
+    color: inherit !important;
+    border-color: inherit !important;
+    a{
+        display: inline-block;
+        font-size: 16px;
+        line-height: 24px;
+        color: inherit;
+        border: solid 1px #ffffff;
+        border-color: inherit;
+        padding: 7px 70px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        background: transparent;
+    }
 }

@@ -1,6 +1,8 @@
 import images from '~/assets/images';
 import styles from './Menu.module.scss';
 import classNames from "classnames/bind";
+import Chat from '~/components/Chat';
+import ToTop from '~/components/ToTop';
 
 const cx = classNames.bind(styles);
 
@@ -58,6 +60,8 @@ function Menu() {
                     </div>
                 )
             })}
+            <Chat />
+            <ToTop />
         </div >);
 }
 
