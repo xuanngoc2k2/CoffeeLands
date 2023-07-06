@@ -35,7 +35,11 @@ const dataProduct = [
 function BuyNow() {
     return (
         <div className={cx('wrapper')}>
-            <BoxProduct title={"Cà phê"} productDes={"Sự kết hợp hoàn hảo giữa hạt cà phê Robusta & Arabica thượng hạng được trồng trên những vùng cao nguyên Việt Nam màu mỡ, qua những bí quyết rang xay độc đáo, Highlands Coffee chúng tôi tự hào giới thiệu những dòng sản phẩm Cà phê mang hương vị đậm đà và tinh tế."} dataProduct={dataProduct} />
+            <div className={cx('box-main')}>
+                <BoxProduct first title={"Cà phê"} productDes={"Sự kết hợp hoàn hảo giữa hạt cà phê Robusta & Arabica thượng hạng được trồng trên những vùng cao nguyên Việt Nam màu mỡ, qua những bí quyết rang xay độc đáo, Highlands Coffee chúng tôi tự hào giới thiệu những dòng sản phẩm Cà phê mang hương vị đậm đà và tinh tế."} dataProduct={dataProduct} />
+                <BoxProduct title={"Freeze"} productDes={"Sự kết hợp hoàn hảo giữa hạt cà phê Robusta & Arabica thượng hạng được trồng trên những vùng cao nguyên Việt Nam màu mỡ, qua những bí quyết rang xay độc đáo, Highlands Coffee chúng tôi tự hào giới thiệu những dòng sản phẩm Cà phê mang hương vị đậm đà và tinh tế."} dataProduct={dataProduct} />
+                <BoxProduct title={"Trà"} productDes={"Sự kết hợp hoàn hảo giữa hạt cà phê Robusta & Arabica thượng hạng được trồng trên những vùng cao nguyên Việt Nam màu mỡ, qua những bí quyết rang xay độc đáo, Highlands Coffee chúng tôi tự hào giới thiệu những dòng sản phẩm Cà phê mang hương vị đậm đà và tinh tế."} dataProduct={dataProduct} />
+            </div>
             {/* <BoxProduct />
             <BoxProduct /> */}
         </div>
