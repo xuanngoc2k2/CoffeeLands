@@ -1,14 +1,24 @@
-import { Fragment } from 'react';
+import { Fragment, useEffect, useRef, useState } from 'react';
 import styles from './BoxProduct.module.scss'
 import classNames from 'classnames/bind';
-
+import ProductSlider from '../ProductSlider';
 
 const cx = classNames.bind(styles);
 
 function BoxProduct({ first = false, title, productDes, dataProduct, children }) {
-    const Wrapper = first ? 'div' : Fragment;
+    const [sildeIndex, setSlideIndex] = useState(0);
+
+    // console.log(dataProduct);
+    const moveSilde = () => {
+        setSlideIndex((prevIndex) => (prevIndex + 1) % dataProduct.length);
+        dataProduct = [...dataProduct.slice(1), dataProduct[0]]
+    };
+    // useEffect(() => {
+    //     const inteval = setInterval(moveSilde, 3000)
+    //     return () => clearInterval(inteval)
+    // }, [dataProduct.length])
     return (
-        <Wrapper className={first ? cx('box-main') : null}>
+        <div className={first ? cx('box-main') : null}>
             <div className={cx('box-wrapper')}>
                 <div className={cx('text')}>
                     <div className={cx('title')}>
@@ -19,13 +29,13 @@ function BoxProduct({ first = false, title, productDes, dataProduct, children })
                     </div>
                 </div>
                 <div className={cx('content')}>
-                    <div className={cx('slide-product')}>
+                    <ProductSlider datas={dataProduct} />
+                    {/* <div className={cx('slide-product')}>
                         <button className={cx('pre-btn')}></button>
-                        {/* <div className={cx('list-product-container')}> */}
                         <div className={cx('list-prod')}>
                             {dataProduct.map((product, index) => {
                                 return (
-                                    <div key={index} className={cx('item')}>
+                                    <div key={index} className={cx('item', `item-${index}`)}>
                                         <div className={cx('img')}>
                                             <a href='#'>
                                                 <img src={product.img} />
@@ -43,13 +53,12 @@ function BoxProduct({ first = false, title, productDes, dataProduct, children })
                                 )
                             })}
                         </div>
-                        {/* </div> */}
                         <button className={cx('next-btn')}></button>
-                    </div>
+                    </div> */}
                 </div>
 
             </div>
-        </Wrapper>
+        </div>
     );
 }
 
