@@ -25,6 +25,12 @@
         text-align: left;
         color: #53382c;
         margin-bottom: 20px;
+        p{
+            padding: 0 I !important;
+        }
+        strong{
+            font-weight: normal !important;
+        }
     }
     .product-des,.title{
         padding: 0 !important;
@@ -36,4 +42,5 @@
 }
 .product-des{
     padding: 5px 0px;
+    font-family: "Open Sans", sans-serif
 }
