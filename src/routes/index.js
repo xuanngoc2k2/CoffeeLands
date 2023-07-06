@@ -1,6 +1,7 @@
 import BuyNow from "~/pages/BuyNow"
 import Home from "~/pages/Home"
 import Menu from "~/pages/Menu"
+import Product from "~/pages/Product"
 
 
 const publicRoutes = [
@@ -14,6 +15,9 @@ const publicRoutes = [
     ,
     {
         path: '/career', component: BuyNow, layout: null
+    },
+    {
+        path: '/product', component: Product
     }
 ]
 
