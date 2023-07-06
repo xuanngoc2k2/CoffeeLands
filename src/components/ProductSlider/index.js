@@ -13,13 +13,13 @@ function ProductSlider({ datas }) {
                         return (
                             <div key={index} className={cx('item', `item-${index}`)}>
                                 <div className={cx('img')}>
-                                    <a href='#'>
+                                    <a href='/product/'>
                                         <img src={product.img} />
                                     </a>
                                 </div>
                                 <div className={cx('tend')}>
                                     <h3>
-                                        <a>{product.Name}</a>
+                                        <a href='/product/'>{product.Name}</a>
                                     </h3>
                                 </div>
                                 <div className={cx('price')}>

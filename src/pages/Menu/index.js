@@ -12,21 +12,21 @@ const dataMenu = [
         img: images.PHIN_SUA_DA,
         tend: "cà phê",
         des: "Sự kết hợp hoàn hảo giữa hạt cà phê Robusta & Arabica thượng hạng được trồng trên những vùng cao nguyên Việt Nam màu mỡ, qua những bí quyết rang xay độc đáo, Highlands Coffee chúng tôi tự hào giới thiệu những dòng sản phẩm Cà phê mang hương vị đậm đà và tinh tế.",
-        link: "/",
+        link: "/product/",
     },
     {
         bgImg: images.bgImgFreeze,
         img: images.FREEZE_TRA_XANH,
         tend: "FREEZE",
         des: "Sảng khoái với thức uống đá xay phong cách Việt. Freeze là thức uống đá xay mát lạnh được pha chế từ những nguyên liệu thuần túy của Việt Nam.",
-        link: "/",
+        link: "/product/",
     },
     {
         bgImg: images.bgImgTra,
         img: images.TRA_SEN_VANG,
         tend: "Trà",
         des: "Hương vị tự nhiên, thơm ngon của Trà Việt với phong cách hiện đại tại Highlands Coffee sẽ giúp bạn gợi mở vị giác của bản thân và tận hưởng một cảm giác thật khoan khoái, tươi mới.",
-        link: "/",
+        link: "/product/",
     },
 ]
 function Menu() {
@@ -38,7 +38,7 @@ function Menu() {
                         <div className={cx('img-wrap')}>
                             <div className={cx('wrapper')} >
                                 <div className={cx('img')}>
-                                    <a href='#'>
+                                    <a href='/product/'>
                                         <img src={menu.img} />
                                     </a>
                                 </div>

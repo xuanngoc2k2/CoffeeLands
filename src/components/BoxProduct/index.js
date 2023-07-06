@@ -30,31 +30,6 @@ function BoxProduct({ first = false, title, productDes, dataProduct, children })
                 </div>
                 <div className={cx('content')}>
                     <ProductSlider datas={dataProduct} />
-                    {/* <div className={cx('slide-product')}>
-                        <button className={cx('pre-btn')}></button>
-                        <div className={cx('list-prod')}>
-                            {dataProduct.map((product, index) => {
-                                return (
-                                    <div key={index} className={cx('item', `item-${index}`)}>
-                                        <div className={cx('img')}>
-                                            <a href='#'>
-                                                <img src={product.img} />
-                                            </a>
-                                        </div>
-                                        <div className={cx('tend')}>
-                                            <h3>
-                                                <a>{product.Name}</a>
-                                            </h3>
-                                        </div>
-                                        <div className={cx('price')}>
-                                            Giá: <strong>{product.Price}</strong>
-                                        </div>
-                                    </div>
-                                )
-                            })}
-                        </div>
-                        <button className={cx('next-btn')}></button>
-                    </div> */}
                 </div>
 
             </div>

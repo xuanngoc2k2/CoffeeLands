@@ -90,12 +90,14 @@
     border-color: inherit;
     display: block;
     font-family: var(--font-family);
-    font-weight: normal !important;
     margin-bottom: 20px;
     cursor: pointer;
     transition: all linear 0.2s;
     &:hover{
         color: #b22830 !important;
+    }
+    h3{
+        font-weight: normal !important;
     }
 }
 
