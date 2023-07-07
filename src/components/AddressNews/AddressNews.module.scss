@@ -41,6 +41,7 @@
   .addr-d,a{
       font-size: 16px;
       line-height: 24px;
+      margin-bottom: 10px;
   }
 
   .icon-s{
@@ -76,6 +77,11 @@
 
   &:not(.active) {
     transform: translateX(100%); // Chuyển động sang phải khi không active
+  }
+
+  a{
+    color: #fff;
+    margin-top: 10px;
   }
   
 }
@@ -181,7 +187,8 @@
           padding-left: 20px;
           font-size: 13px;
           line-height: 21px;
-
+          font-family: "Open Sans", "sans-serif";
+          
           span::before{
             content: "\f133";
             font-family: "fontawesome";
