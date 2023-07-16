@@ -1,5 +1,6 @@
 import BuyNow from "~/pages/BuyNow"
 import Home from "~/pages/Home"
+import Login from "~/pages/Login"
 import Menu from "~/pages/Menu"
 import Product from "~/pages/Product"
 
@@ -18,6 +19,9 @@ const publicRoutes = [
     },
     {
         path: '/product', component: Product
+    }
+    , {
+        path: '/login', component: Login, layout: null
     }
 ]
 

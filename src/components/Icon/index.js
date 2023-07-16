@@ -33,3 +33,4 @@ export const ChatIcon = ({ width = '15px', height = '15px', className }) => (
         </path>
     </svg>
 );
+

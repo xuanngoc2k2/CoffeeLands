@@ -27,7 +27,10 @@ const images = {
     imgProduct3: require('~/assets/images/product3.jpg'),
     imgProduct4: require('~/assets/images/product4.jpg'),
     imgProduct5: require('~/assets/images/product5.jpg'),
-    dathangngay: require('~/assets/images/65-dat-mua-kmk.png')
+    dathangngay: require('~/assets/images/65-dat-mua-kmk.png'),
+    a: require('~/assets/images/a.png'),
+    email: require('~/assets/images/email.jpg'),
+    pass: require('~/assets/images/email.jpg')
 };
 
 export default images;
