@@ -10,6 +10,9 @@ html{
 }
 .container{
     height: 100vh;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
 }
 .loginform{
   max-width: 500px;
@@ -17,7 +20,7 @@ html{
   max-height: 700px;
   width: 30%;
   height: 60%;
-  margin: 100px auto;
+  margin-top: 100px;
   background-color: #FFFFFF;
   border-radius: 25px;
 }
