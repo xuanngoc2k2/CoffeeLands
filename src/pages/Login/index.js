@@ -1,19 +1,47 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './Login.module.scss';
 import classNames from 'classnames/bind';
-import images from '~/assets/images';
-import { faFacebook, faFacebookF, faGoogle, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faGoogle, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { useState } from 'react';
 
 const cx = classNames.bind(styles);
 function Login() {
+    const [inputUsername, setInputUsername] = useState('');
+    const [inputPassword, setInputPassword] = useState('');
+    const handleChangeUsername = (e) => {
+        const username = e.target.value;
+        if (!username.startsWith(' ')) {
+            setInputUsername(username);
+        }
+    };
+    const handleChangePassword = (e) => {
+        const password = e.target.value;
+        if (!password.startsWith(' ')) {
+            setInputPassword(password);
+        }
+    };
     return (
         <div className={cx('container')}>
 
             <div className={cx("loginform")} >
                 <h2 className={cx("headerTitle")} >Log in</h2 >
                 <div>
-                    <FormInput description="Username" placeholder="Enter your username" type="text" />
-                    <FormInput description="Password" placeholder="Enter your password" type="password" />
+                    <div className={cx("row")}>
+                        <label>Username</label>
+                        <input
+                            value={inputUsername}
+                            type="text"
+                            placeholder="Enter your username"
+                            onChange={handleChangeUsername} />
+                    </div>
+                    <div className={cx("row")}>
+                        <label>Password</label>
+                        <input
+                            value={inputPassword}
+                            type="password"
+                            onChange={handleChangePassword}
+                            placeholder="Enter your password" />
+                    </div>
                     <div className={cx("button", "row")}>
                         <button>Log in</button>
                     </div>
@@ -30,10 +58,4 @@ function Login() {
         </div>
     );
 }
-const FormInput = props => (
-    <div className={cx("row")}>
-        <label>{props.description}</label>
-        <input type={props.type} placeholder={props.placeholder} />
-    </div>
-);
 export default Login;
